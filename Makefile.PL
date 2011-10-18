@@ -2,7 +2,11 @@ use inc::Module::Install;
 name 'Config-PP';
 all_from 'lib/Config/PP.pm';
 
-# requires '';
+requires 'parent';
+requires 'Data::Dumper';
+requires 'File::Spec', 3.33;
+requires 'Carp';
+requires 'Exporter';
 
 tests 't/*.t';
 author_tests 'xt';
