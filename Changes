@@ -1,4 +1,7 @@
 Revision history for Perl extension Config::PP
 
+0.02    Wed Oct 19 00:04:54 2011
+        - initial release
+
 0.01    Tue Oct 18 02:36:43 2011
         - original version

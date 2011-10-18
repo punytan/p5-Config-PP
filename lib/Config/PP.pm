@@ -9,7 +9,7 @@ use Data::Dumper;
 use File::Spec;
 use Carp;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our $DIR     = File::Spec->catfile($ENV{HOME}, '.ppconfig');
 
 # path: $DIR/${namespace}.pl
