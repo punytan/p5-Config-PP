@@ -1,6 +1,9 @@
 use strict;
 use Test::More;
 use Config::PP;
+use File::Spec;
+
+local $Config::PP::DIR = File::Spec->tmpdir;
 
 config_set "config.pp.test.basic", {
     'config.pp.test.basic' => 'ok',
