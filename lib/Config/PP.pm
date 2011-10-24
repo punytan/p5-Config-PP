@@ -17,7 +17,7 @@ our $DIR     = File::Spec->catfile($ENV{HOME}, '.ppconfig');
 sub config_get ($) {
     my $namespace = shift;
     my $path = path($namespace);
-    return (do $path or Carp::croak "$!$@: $path");
+    return (do $path or Carp::croak "$!$@" ? "$!$@: $path" : "Can't find config: $path");
 }
 
 sub config_set ($$) {
